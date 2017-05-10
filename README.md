@@ -16,14 +16,9 @@ Javascript slider
 
 ### To include slider into your code follow:
 1. You need to insert follwoing html code into your page:
-`
-<div class="slider">
-	<button class="arrow arrow--left">
-	<svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	version="1.1" id="Capa_1" x="0px" 
-	y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve"><g id="chevron-left"><polygon points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153" fill="#FFDA44"/></g>
-	</svg>
-	</button>
+
+`<div class="slider">
+	<button class="arrow arrow--left"></button>
     
 	<ul class="slider-body">
 		<li><img src="http://placehold.it/130x130/fff"></li>
@@ -39,17 +34,9 @@ Javascript slider
 	</ul>
     
     <ul class="slider-toggles"></ul>
-    <button class="arrow arrow--right">
-    <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-      version="1.1" id="Capa_1" x="0px" 
-      y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
-    <g><g id="chevron-right">
-	<polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153" fill="#FFDA44"/>
-	</g></g>
-    </svg>
-    </button>
-</div>
-`
+    <button class="arrow arrow--right"></button>
+</div>`
+
 2. Make sure you've made available slider js file at the end of the `body` tag:
 `<script src="carousel.js"></script>`
 

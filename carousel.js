@@ -13,6 +13,7 @@ class Carousel {
       
   		this._initStyles();
   		this._initEvents();
+		this._arrowsCreate();
   		this._togglesCreate();
   		this.run();
     }
@@ -120,6 +121,25 @@ class Carousel {
     	}, this.delay);
     }
     
+	_arrowsCreate() {
+		let leftArrowSVG = `<svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"version="1.1" id="Capa_1" x="0px" 
+	y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve"><g id="chevron-left"><polygon points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153"/></g>
+	</svg>`,
+			rightArrowSVG = `<svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+      version="1.1" id="Capa_1" x="0px" 
+      y="0px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+    <g><g id="chevron-right">
+	<polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153"/>
+	</g></g>
+    </svg>`;
+		
+		let leftArrow = this.el.querySelector(".arrow--left"),
+			rightArrow = this.el.querySelector(".arrow--right");
+		
+		leftArrow.innerHTML += leftArrowSVG;
+		rightArrow.innerHTML += rightArrowSVG;
+	}
+	
     _togglesCreate() {
     	let sliderToggles = this.el.querySelector(".slider-toggles");
     	
